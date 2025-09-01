@@ -88,7 +88,25 @@ END
 
 #### Program
 
-
+```asm
+CODE SEGMENT
+ASSUME CS: CODE, DS: CODE
+ORG 1000H
+MOV SI,2000H
+MOV CL,00H
+MOV AX,[SI]
+MOV BX,[SI+02H]
+SUB AX,BX
+JNC L1
+INC CL
+L1:
+MOV [SI+04H],AX
+MOV [SI+06H],CL
+MOV AH,4CH
+INT 21H
+CODE ENDS
+END
+```
 
 #### Output Table
 
@@ -148,15 +166,19 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-
+|            2000 : 12    |         2004 : 44        |
+2001 : 34 | 2005 : 51
+2002 : 12 | 2006 : 97
+2003 : 34 | 2007 : 0A
 #### Manual Calculations
 
 (Add your calculation here)
 
----
+---![smul](https://github.com/user-attachments/assets/d359aa94-f81b-4f7d-b67f-0bf96074f73f)
+
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="642" height="427" alt="sudh_mul" src="https://github.com/user-attachments/assets/15310eea-13c2-44c0-975d-5871cbd052d6" />
 
 ## 4. DIVISION
 
@@ -193,15 +215,19 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-
+|            2000 : 12    |          2004 : 01            |
+2001 : 34 | 2005 : 00
+2002 : 12 | 2006 : 00
+2003 : 34 | 2007 : 00
 #### Manual Calculations
 
 (Add your calculation here)
+![sdiv](https://github.com/user-attachments/assets/6756d89a-f539-4592-b4f4-cc13a23636d2)
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
 
+<img width="642" height="427" alt="sudh_div" src="https://github.com/user-attachments/assets/42c10e4f-7379-4841-84e9-158682d6ae08" />
 
 
 ## RESULT
