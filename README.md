@@ -57,15 +57,19 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-
+|           2000 : 56     |              2004 : 68   |
+2001 : 78 | 2005 : AC
+2002 : 12 | 2006 : 00
+2003 : 34 | 2007 : D6
 #### Manual Calculations
 
 (Add your calculation here)
 
----
+---![sadd](https://github.com/user-attachments/assets/06ee92fb-5f87-4155-8922-e3f4092af2fb)
+
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
+<img width="642" height="427" alt="sudh_add" src="https://github.com/user-attachments/assets/8f1e5540-87b6-446a-bb1e-5c8ff46072d6" />
 
 ## 2. SUBTRACTION
 
@@ -90,16 +94,21 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-
+|             2000 : 56   |   2004 : 44              |
+2001 : 78 | 2005 : 44
+2002 : 12 | 2006 : 00
+2003 : 34 | 2007 : D6
 #### Manual Calculations
 
 (Add your calculation here)
 
 ---
+![ssub](https://github.com/user-attachments/assets/a76c5de9-e07d-4b85-badf-df86ac2c8a3a)
 
 
-## OUTPUT SCREEN FROM MASM SOFTWARE
+## OUTPUT SCREEN FROM MASM 
+<img width="642" height="427" alt="sudh_sub" src="https://github.com/user-attachments/assets/433fcbed-08bd-4fcb-b942-6888bb228edc" />
+SOFTWARE
 
 ## 3. MULTIPLICATION
 
